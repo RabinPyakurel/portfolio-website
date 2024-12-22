@@ -10,34 +10,34 @@ export const ABOUT_TEXT = `I am an enthusiastic and goal-driven developer curren
 export const EXPERIENCES = [
   {
     year: "2024 - Present",
-    role: "Java Developer Huna Khojeko",
+    role: "Aspiring Java Developer",
     company: "N/A",
-    description: `Currently focused on mastering Core Java and Spring Boot, working on enhancing backend development skills with a primary goal of becoming a proficient Java Developer.`,
-    technologies: ["Java", "React.js", "Spring Boot", "mongoDB"],
+    description: `Currently focused on mastering Core Java and Spring Boot, enhancing backend development skills to become a proficient Java Developer. Building microservices and practicing RESTful API design.`,
+    technologies: ["Java", "React", "Spring Boot", "MongoDB"],
   },
   {
     year: "2024",
-    role: "JavaScript Sikne Manchhe",
+    role: "JavaScript Project Developer",
     company: "N/A",
-    description: `Built a simple Currency Converter app for practice by following tutorials, gaining experience in JavaScript and front-end development.`,
+    description: `Created a Currency Converter app by following tutorials. This project provided hands-on experience with JavaScript and a deeper understanding of DOM manipulation and API integration.`,
     technologies: ["HTML", "CSS", "JavaScript"],
   },
-
   {
     year: "2023 - Present",
-    role: "Full Stack developer bhaideko",
+    role: "Aspiring Full Stack Developer",
     company: "N/A",
-    description: `Developing a dynamic web application using HTML, CSS, PHP, and MySQL. The project focuses on managing student information, enabling functionalities like student registration, profile management, and event tracking.`,
-    technologies: ["HTML", "CSS", "JavaScript", "mySQL", "PHP"],
+    description: `Developing a dynamic web application to manage student information using HTML, CSS, PHP, and MySQL. Features include student registration, profile management, and event tracking. Emphasized backend development and database design.`,
+    technologies: ["HTML", "CSS", "JavaScript", "MySQL", "PHP"],
   },
   {
     year: "2023",
-    role: "C Programmer[Hero]",
+    role: "C Programmer",
     company: "N/A",
-    description: `Developed a self-coded unit conversion program in C, focusing on algorithm design and practical application of C programming skills.`,
-    technologies: ["Purai a to z C ma"],
+    description: `Developed a unit conversion program in C, showcasing a strong understanding of algorithm design, modular programming, and user interaction.`,
+    technologies: ["C Programming"],
   },
 ];
+
 
 export const PROJECTS = [
   {
