@@ -3,7 +3,7 @@ import project2 from "../assets/projects/currency.png";
 import project3 from "../assets/projects/portfolio.png";
 import project4 from "../assets/projects/uc.png";
 
-export const HERO_CONTENT = `I am a passionate Java developer in the making, focusing on mastering Spring Boot and web development. My journey started with a love for coding in C, JavaScript, and React, evolving into a strong foundation in PHP and MySQL. While I dream of delving into the MERN stack and exploring cybersecurity and Android development, my primary goal is to become a full-fledged Java developer. The ever-evolving world of web development fascinates me, driving my dedication to creating innovative solutions.`;
+export const HERO_CONTENT = `I am an aspiring Java developer specializing in Spring Boot and web development. My journey began with coding in C and JavaScript, leading to a solid foundation in PHP and MySQL. While I’m intrigued by MERN stack, cybersecurity, and Android development, my core focus remains on mastering Java and building innovative web solutions.`;
 
 export const ABOUT_TEXT = `I am an enthusiastic and goal-driven developer currently pursuing a BCA at Kathford International College of Engineering and Management. My technical expertise includes C, Java, JavaScript, React, PHP, and MySQL, which I have leveraged to build academic and practice projects. My primary focus is on mastering Java and Spring Boot, with aspirations to excel as a full-time Java developer. In addition to web development, I am intrigued by cybersecurity and Android development, but my fascination with creating intuitive and efficient web solutions drives my efforts. Outside of coding, I enjoy participating in tech competitions and exploring emerging technologies.`;
 
