@@ -1,10 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  font-family: "Inter",sans-serif;
+:root {
+  font-family: "Inter", system-ui, sans-serif;
   scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0d1117] text-gray-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-emerald-900 text-emerald-100;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #161b22;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+    background: #30363d;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
+  }
+}
+
+/* Lightning border-trace animation — hover only */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.lightning-card {
+  position: relative;
+  border-radius: 9999px;
+  z-index: 0;
+  border: 1.5px solid #30363d;
+  transition: border-color 0.3s;
+}
+
+/* Sharp border trace */
+.lightning-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 9999px;
+  z-index: -1;
+  opacity: 0;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--angle),
+    #6ee7b7 0%,
+    #34d399 12%,
+    #10b981 25%,
+    transparent 35%,
+    transparent 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: lightning-trace 2s linear infinite;
+  transition: opacity 0.3s;
+}
+
+/* Soft glow behind the trace */
+.lightning-card::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 9999px;
+  z-index: -1;
+  opacity: 0;
+  padding: 4px;
+  background: conic-gradient(
+    from var(--angle),
+    #6ee7b7 0%,
+    #34d399 10%,
+    #10b981 20%,
+    transparent 30%,
+    transparent 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  filter: blur(6px);
+  animation: lightning-trace 2s linear infinite;
+  transition: opacity 0.3s;
+}
+
+.lightning-card:hover {
+  border-color: transparent;
+}
+
+.lightning-card:hover::before {
+  opacity: 1;
+}
+
+.lightning-card:hover::after {
+  opacity: 0.6;
+}
+
+@keyframes lightning-trace {
+  to { --angle: 360deg; }
+}
+
+/* Floating code snippets background */
+.code-float {
+  animation: float-up 8s ease-in-out infinite;
+}
+
+@keyframes float-up {
+  0% { opacity: 0; transform: translateY(40px) rotate(-2deg); }
+  10% { opacity: 0.15; }
+  90% { opacity: 0.15; }
+  100% { opacity: 0; transform: translateY(-40px) rotate(2deg); }
+}
+
+/* Watery ripple background */
+@keyframes ripple-dark {
+  0% { transform: scale(0.8); opacity: 0.12; }
+  50% { transform: scale(1.2); opacity: 0.05; }
+  100% { transform: scale(0.8); opacity: 0.12; }
 }
