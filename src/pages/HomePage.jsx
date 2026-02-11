@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ClientOnly } from 'vite-react-ssg';
 import { TypeAnimation } from 'react-type-animation';
 import { motion, useInView } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
@@ -48,11 +49,13 @@ const HomePage = () => {
         description="Rabin Babu Pyakurel — Java Developer & Web Developer based in Kathmandu. Building full-stack web applications with Java, Spring Boot, React, and PHP."
       />
 
-      {!introDone && <TerminalIntro onFinish={() => setIntroDone(true)} />}
+      <ClientOnly>
+        {() => !introDone && <TerminalIntro onFinish={() => setIntroDone(true)} />}
+      </ClientOnly>
 
       {/* Hero */}
       <section className="relative z-10 min-h-[calc(100vh-80px)] flex items-center py-8 sm:py-0">
-        <ParticleBackground />
+        <ClientOnly>{() => <ParticleBackground />}</ClientOnly>
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8 md:gap-12 py-8 md:py-16 w-full">
           <div className="flex-1 text-center lg:text-left">
             <motion.p

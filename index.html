@@ -3,19 +3,56 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/jpeg" href="/me.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Rabin Babu Pyakurel | Java Developer & Web Developer</title>
+  <meta name="title" content="Rabin Babu Pyakurel | Java Developer & Web Developer" />
+  <meta name="description" content="Rabin Babu Pyakurel — Java Developer & Web Developer based in Kathmandu. Building full-stack web applications with Java, Spring Boot, React, and PHP." />
+  <meta name="keywords" content="Rabin Pyakurel, Java Developer, Spring Boot, React, Full Stack Developer, Portfolio, Web Developer, Kathmandu, Nepal" />
+  <meta name="author" content="Rabin Babu Pyakurel" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
   <meta name="theme-color" content="#059669" />
-  <meta name="description" content="Rabin Babu Pyakurel - Java Developer & Full Stack Builder. Portfolio showcasing projects, skills, and certifications." />
-  <meta name="keywords" content="Rabin Pyakurel, Java Developer, Spring Boot, React, Portfolio" />
-  <meta property="og:title" content="Rabin Babu Pyakurel - Portfolio" />
-  <meta property="og:description" content="Java Developer & Full Stack Builder" />
-  <meta property="og:image" content="/me.jpg" />
-  <title>Rabin Pyakurel | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="/me.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://rabinpyakurel.com.np/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rabinpyakurel.com.np/" />
+  <meta property="og:title" content="Rabin Babu Pyakurel | Java Developer & Web Developer" />
+  <meta property="og:description" content="Java Developer & Full Stack Builder. Portfolio showcasing projects, skills, certifications, and resume." />
+  <meta property="og:image" content="https://rabinpyakurel.com.np/me.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Rabin Babu Pyakurel" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://rabinpyakurel.com.np/" />
+  <meta name="twitter:title" content="Rabin Babu Pyakurel | Java Developer & Web Developer" />
+  <meta name="twitter:description" content="Java Developer & Full Stack Builder. Portfolio showcasing projects, skills, certifications, and resume." />
+  <meta name="twitter:image" content="https://rabinpyakurel.com.np/me.jpg" />
 </head>
 
 <body>
   <div id="root"></div>
+  <!-- GitHub Pages SPA redirect handler -->
+  <script>
+    (function () {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
