@@ -1,5 +1,9 @@
 import sapoImg from '../assets/projects/sapo.png';
 import currencyImg from '../assets/projects/currency.png';
+import reliefkartImg from '../assets/projects/relief-kart.png';
+import eventFinderImg from '../assets/projects/locaal-event-finder.png';
+import sajabazaarImg from '../assets/projects/sajabazaar.png';
+import frontendCertImg from '../assets/certifications/frontend-cert.jpg';
 
 import { DiJavascript1 } from 'react-icons/di';
 import { FaJava, FaPhp, FaHtml5, FaCss3Alt, FaGitAlt } from 'react-icons/fa';
@@ -70,8 +74,8 @@ export const PROJECTS = [
   {
     slug: 'reliefkart',
     title: 'ReliefKart - Disaster Relief E-Commerce Platform',
-    image: null,
-    images: [],
+    image: reliefkartImg,
+    images: [reliefkartImg],
     description: 'A full-stack e-commerce platform for purchasing disaster relief and emergency supplies, built specifically for Nepal. Users can browse, search, and purchase essential items like earthquake kits, first aid supplies, water purifiers, and lighting equipment — with integrated eSewa and Khalti payment gateways.',
     features: [
       'User registration with comprehensive validation and secure login with session persistence',
@@ -92,8 +96,8 @@ export const PROJECTS = [
   {
     slug: 'local-event-finder-api',
     title: 'Local Event Finder - Backend API',
-    image: null,
-    images: [],
+    image: eventFinderImg,
+    images: [eventFinderImg],
     description: 'A production-grade RESTful backend for a local event discovery and management platform. Supports event creation, ticketing with QR code check-in, dual payment gateway integration (eSewa & Khalti), community groups, and a full admin moderation panel — all secured with JWT authentication and granular Role-Based Access Control (RBAC).',
     features: [
       'JWT authentication with token blacklisting and BCrypt password hashing',
@@ -133,8 +137,8 @@ export const PROJECTS = [
   {
     slug: 'sajabazaar',
     title: 'SajaBazaar',
-    image: null,
-    images: [],
+    image: sajabazaarImg,
+    images: [sajabazaarImg],
     description: 'A frontend e-commerce website with modern UI, product browsing, and shopping cart functionality.',
     features: [
       'Product browsing with grid and list view options',
@@ -155,7 +159,7 @@ export const CERTIFICATIONS = [
     title: 'Frontend Development using React and Figma',
     provider: 'VOLVE IT HUB NEPAL',
     date: 'December, 2024',
-    badge: '/frontend-cert.jpg',
+    badge: frontendCertImg,
     credentialUrl: '',
     description: 'Frontend web development covering React and Figma for building modern user interfaces.',
   },
