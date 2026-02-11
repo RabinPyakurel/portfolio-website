@@ -152,12 +152,12 @@ export const PROJECTS = [
 
 export const CERTIFICATIONS = [
   {
-    title: 'Frontend Development',
-    provider: 'Provider Name',
-    date: 'Year',
-    badge: null,
+    title: 'Frontend Development using React and Figma',
+    provider: 'VOLVE IT HUB NEPAL',
+    date: 'December, 2024',
+    badge: '/frontend-cert.jpg',
     credentialUrl: '',
-    description: 'Frontend web development covering HTML, CSS, JavaScript, and modern frameworks.',
+    description: 'Frontend web development covering React and Figma for building modern user interfaces.',
   },
   {
     title: 'Data Science',

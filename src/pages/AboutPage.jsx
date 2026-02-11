@@ -26,7 +26,7 @@ const AboutPage = () => (
           />
         </ScrollReveal>
         <ScrollReveal direction="right">
-          <p className="text-text-secondary dark:text-gray-400 leading-relaxed text-base sm:text-lg max-w-2xl text-center lg:text-left">
+          <p className="text-gray-400 leading-relaxed text-base sm:text-lg max-w-2xl text-center lg:text-left">
             {ABOUT_TEXT}
           </p>
         </ScrollReveal>

@@ -24,12 +24,12 @@ const ContactPage = () => (
             <motion.a
               href={`mailto:${CONTACT.email}`}
               whileHover={{ y: -5 }}
-              className="block p-5 sm:p-6 bg-surface-50 dark:bg-[#161b22] rounded-xl border border-surface-200 dark:border-gray-800 text-center hover:shadow-lg transition-shadow"
+              className="block p-5 sm:p-6 bg-[#161b22] rounded-xl border border-gray-800 text-center hover:shadow-lg transition-shadow"
               aria-label="Send email"
             >
-              <FaEnvelope className="mx-auto text-2xl text-primary-500 dark:text-primary-400 mb-3" />
-              <p className="text-sm font-medium text-text-DEFAULT dark:text-gray-100">Email</p>
-              <p className="text-xs text-text-secondary dark:text-gray-400 mt-1 break-all">{CONTACT.email}</p>
+              <FaEnvelope className="mx-auto text-2xl text-primary-400 mb-3" />
+              <p className="text-sm font-medium text-gray-100">Email</p>
+              <p className="text-xs text-gray-400 mt-1 break-all">{CONTACT.email}</p>
             </motion.a>
           </ScrollReveal>
 
@@ -37,30 +37,30 @@ const ContactPage = () => (
             <motion.a
               href={`tel:${CONTACT.phoneNo.replace(/\s/g, '')}`}
               whileHover={{ y: -5 }}
-              className="block p-5 sm:p-6 bg-surface-50 dark:bg-[#161b22] rounded-xl border border-surface-200 dark:border-gray-800 text-center hover:shadow-lg transition-shadow"
+              className="block p-5 sm:p-6 bg-[#161b22] rounded-xl border border-gray-800 text-center hover:shadow-lg transition-shadow"
               aria-label="Call phone"
             >
-              <FaPhone className="mx-auto text-2xl text-primary-500 dark:text-primary-400 mb-3" />
-              <p className="text-sm font-medium text-text-DEFAULT dark:text-gray-100">Phone</p>
-              <p className="text-xs text-text-secondary dark:text-gray-400 mt-1">{CONTACT.phoneNo}</p>
+              <FaPhone className="mx-auto text-2xl text-primary-400 mb-3" />
+              <p className="text-sm font-medium text-gray-100">Phone</p>
+              <p className="text-xs text-gray-400 mt-1">{CONTACT.phoneNo}</p>
             </motion.a>
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
             <motion.div
               whileHover={{ y: -5 }}
-              className="p-5 sm:p-6 bg-surface-50 dark:bg-[#161b22] rounded-xl border border-surface-200 dark:border-gray-800 text-center hover:shadow-lg transition-shadow"
+              className="p-5 sm:p-6 bg-[#161b22] rounded-xl border border-gray-800 text-center hover:shadow-lg transition-shadow"
             >
-              <FaMapMarkerAlt className="mx-auto text-2xl text-primary-500 dark:text-primary-400 mb-3" />
-              <p className="text-sm font-medium text-text-DEFAULT dark:text-gray-100">Location</p>
-              <p className="text-xs text-text-secondary dark:text-gray-400 mt-1">{CONTACT.address}</p>
+              <FaMapMarkerAlt className="mx-auto text-2xl text-primary-400 mb-3" />
+              <p className="text-sm font-medium text-gray-100">Location</p>
+              <p className="text-xs text-gray-400 mt-1">{CONTACT.address}</p>
             </motion.div>
           </ScrollReveal>
         </div>
 
         <ScrollReveal>
           <div className="text-center">
-            <p className="text-text-secondary dark:text-gray-400 mb-4">Find me on social media</p>
+            <p className="text-gray-400 mb-4">Find me on social media</p>
             <div className="flex justify-center">
               <SocialLinks size="text-2xl sm:text-3xl" />
             </div>

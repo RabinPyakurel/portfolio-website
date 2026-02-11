@@ -26,7 +26,7 @@ const MainLayout = () => {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen bg-[#0d1117] text-gray-100 antialiased">
+    <div className="flex flex-col min-h-screen bg-[#0d1117] text-gray-100 antialiased">
       {/* Floating code background — site-wide */}
       <div className="fixed inset-0 pointer-events-none select-none overflow-hidden z-0" aria-hidden="true">
         {CODE_SNIPPETS.map((snippet, i) => (
@@ -49,7 +49,7 @@ const MainLayout = () => {
       </div>
 
       <Navbar />
-      <main className="relative z-10 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+      <main className="relative z-10 flex-grow container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <Outlet />
       </main>
       <Footer />
