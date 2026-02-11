@@ -13,13 +13,13 @@ const EXPERIENCE = [
     highlights: ['Spring Boot REST APIs', 'React frontends', 'PostgreSQL & MySQL', 'JWT Authentication'],
   },
   {
-    period: '2023 - Present',
+    period: '2023 - 2024',
     role: 'Web Development with PHP & MySQL',
     description: 'Built the Student Academic Portal — a full-featured web application for managing student data, exams, and events using PHP, MySQL, and JavaScript.',
     highlights: ['PHP backend development', 'MySQL CRUD operations', 'Admin dashboards', 'Responsive UI design'],
   },
   {
-    period: '2024',
+    period: '2023',
     role: 'Frontend & JavaScript Projects',
     description: 'Created frontend projects including Currency Changer (vanilla JS with live API) and SajaBazaar (React e-commerce frontend). Gained hands-on experience with DOM manipulation and component architecture.',
     highlights: ['Vanilla JavaScript', 'React components', 'API integration', 'Responsive CSS'],
