@@ -164,12 +164,12 @@ export const CERTIFICATIONS = [
     description: 'Frontend web development covering React and Figma for building modern user interfaces.',
   },
   {
-    title: 'Data Science',
-    provider: 'Provider Name',
-    date: 'Year',
+    title: 'Python with Data Science',
+    provider: 'Samasta Groups Pvt. Ltd.',
+    date: 'July, 2025',
     badge: null,
     credentialUrl: '',
-    description: 'Data science fundamentals including data analysis, visualization, and machine learning basics.',
+    description: 'Python programming and data science covering data analysis, visualization, and machine learning fundamentals.',
   },
 ];
 
