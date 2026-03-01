@@ -176,5 +176,5 @@ export const CERTIFICATIONS = [
 export const CONTACT = {
   address: 'Gaurighat, Kathmandu',
   phoneNo: '+977 9848754410',
-  email: 'contact@rabinpyakurel.com.np',
+  email: 'rabinstar137@gmail.com',
 };
