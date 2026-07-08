@@ -7,20 +7,30 @@ import { SKILLS, EDUCATION, CONTACT } from '../constants';
 
 const EXPERIENCE = [
   {
+    period: '31st March, 2026 – 30th June, 2026',
+    role: '.NET Intern',
+    company: 'Dynamic Technosoft Pvt. Ltd.',
+    description: 'Contributed to the development of a centralized NGO/INGO registration and project tracking platform using ASP.NET MVC, AngularJS, Bootstrap 4, and Microsoft SQL Server. Developed full-stack features including CRUD operations, business logic, form validations, database integrations, and responsive user interfaces. Collaborated in an Agile development environment using Git, participating in feature development, testing, debugging, and application maintenance.',
+    highlights: ['ASP.NET MVC', 'AngularJS', 'Bootstrap 4', 'Microsoft SQL Server', 'Git', 'Agile'],
+  },
+  {
     period: '2024 - Present',
     role: 'Java & Spring Boot Development',
+    company: null,
     description: 'Building backend services and RESTful APIs with Java and Spring Boot. Developing full-stack applications including ReliefKart (React + Spring Boot) and Local Event Finder API.',
     highlights: ['Spring Boot REST APIs', 'React frontends', 'PostgreSQL & MySQL', 'JWT Authentication'],
   },
   {
     period: '2023 - 2024',
     role: 'Web Development with PHP & MySQL',
+    company: null,
     description: 'Built the Student Academic Portal — a full-featured web application for managing student data, exams, and events using PHP, MySQL, and JavaScript.',
     highlights: ['PHP backend development', 'MySQL CRUD operations', 'Admin dashboards', 'Responsive UI design'],
   },
   {
     period: '2023',
     role: 'Frontend & JavaScript Projects',
+    company: null,
     description: 'Created frontend projects including Currency Changer (vanilla JS with live API) and SajaBazaar (React e-commerce frontend). Gained hands-on experience with DOM manipulation and component architecture.',
     highlights: ['Vanilla JavaScript', 'React components', 'API integration', 'Responsive CSS'],
   },
@@ -31,7 +41,7 @@ const ResumePage = () => (
     <SEO
       title="Resume"
       path="/resume"
-      description="Resume of Rabin Babu Pyakurel — Java Developer & Web Developer with experience in Spring Boot, React, PHP, and MySQL."
+      description="Resume of Rabin Babu Pyakurel — Java & Spring Boot Developer with experience in full-stack web development, RESTful APIs, React, PHP, and MySQL."
     />
 
     <div className="py-10 sm:py-16 max-w-4xl mx-auto">
@@ -55,14 +65,15 @@ const ResumePage = () => (
       <ScrollReveal>
         <div className="bg-[#161b22] border border-gray-800 rounded-xl p-4 sm:p-6 mb-8 sm:mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-100">Rabin Babu Pyakurel</h2>
-          <p className="text-primary-400 font-medium mt-1 text-sm sm:text-base">Java Developer | Web Developer</p>
+          <p className="text-primary-400 font-medium mt-1 text-sm sm:text-base">Java & Spring Boot Developer | Web Developer</p>
           <p className="text-xs sm:text-sm text-gray-400 mt-2 break-words">
             {CONTACT.address} &middot; {CONTACT.phoneNo} &middot; {CONTACT.email}
           </p>
           <p className="text-sm sm:text-base text-gray-400 mt-3 leading-relaxed">
-            Aspiring Java developer with hands-on experience in Spring Boot, React, PHP, and MySQL.
-            Currently pursuing BCA with a focus on building full-stack web applications and RESTful APIs.
-            Passionate about clean code, efficient backend systems, and intuitive user interfaces.
+            Aspiring Java & Spring Boot developer focused on building scalable backend systems and full-stack web applications.
+            Currently pursuing BCA, with hands-on experience in RESTful APIs, React, PHP, and MySQL.
+            Also gained industry exposure through a .NET internship at Dynamic Technosoft Pvt. Ltd.
+            Passionate about clean code, efficient backend architecture, and intuitive user interfaces.
           </p>
         </div>
       </ScrollReveal>
@@ -100,6 +111,9 @@ const ResumePage = () => (
                 <div className="absolute left-[-7px] top-1.5 w-3 h-3 rounded-full bg-primary-500 border-2 border-[#0d1117]" />
                 <p className="text-xs font-mono text-gray-500">{exp.period}</p>
                 <h4 className="font-semibold text-gray-100 mt-0.5 text-sm sm:text-base">{exp.role}</h4>
+                {exp.company && (
+                  <p className="text-xs sm:text-sm text-primary-400 font-medium mt-0.5">{exp.company}</p>
+                )}
                 <p className="text-xs sm:text-sm text-gray-400 mt-1">{exp.description}</p>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-2">
                   {exp.highlights.map((h) => (
