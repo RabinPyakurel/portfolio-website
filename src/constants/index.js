@@ -4,6 +4,7 @@ import reliefkartImg from '../assets/projects/relief-kart.png';
 import eventFinderImg from '../assets/projects/locaal-event-finder.png';
 import sajabazaarImg from '../assets/projects/sajabazaar.png';
 import frontendCertImg from '../assets/certifications/frontend-cert.jpg';
+import devopsCertImg from '../assets/certifications/devops-cert.jpeg';
 
 import { DiJavascript1 } from 'react-icons/di';
 import { FaJava, FaPhp, FaHtml5, FaCss3Alt, FaGitAlt } from 'react-icons/fa';
@@ -170,6 +171,14 @@ export const CERTIFICATIONS = [
     badge: null,
     credentialUrl: '',
     description: 'Python programming and data science covering data analysis, visualization, and machine learning fundamentals.',
+  },
+  {
+    title: 'DevOps in the Cloud',
+    provider: 'Samasta Groups Pvt. Ltd. & Kathford International College',
+    date: 'March, 2026',
+    badge: devopsCertImg,
+    credentialUrl: '',
+    description: 'Successfully completed a 60-hour "DevOps in the Cloud" professional training program covering AWS cloud fundamentals, IAM, VPC, EC2, S3, RDS, Docker, Kubernetes, CI/CD, AWS Developer Tools, CloudWatch, cloud security, and deployment of a secure real-world AWS project.',
   },
 ];
 
