@@ -46,7 +46,7 @@ const HomePage = () => {
     <PageTransition>
       <SEO
         path="/"
-        description="Rabin Babu Pyakurel — Java Developer & Web Developer based in Kathmandu. Building full-stack web applications with Java, Spring Boot, React, and PHP."
+        description="Rabin Babu Pyakurel — Backend Engineer in Kathmandu building production systems with ASP.NET Core, EF Core, PostgreSQL and Docker, plus Java and Spring Boot."
       />
 
       <ClientOnly>
@@ -114,7 +114,7 @@ const HomePage = () => {
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
               src={profilePic}
-              alt="Rabin Babu Pyakurel - Java Developer and Web Developer from Kathmandu"
+              alt="Rabin Babu Pyakurel - Backend Engineer from Kathmandu"
               className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-gray-800 shadow-xl"
             />
           </motion.div>

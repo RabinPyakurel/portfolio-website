@@ -8,7 +8,8 @@ const personSchema = {
   '@type': 'Person',
   name: 'Rabin Babu Pyakurel',
   url: BASE_URL,
-  jobTitle: 'Java Developer',
+  jobTitle: 'Backend Engineer',
+  worksFor: { '@type': 'Organization', name: 'Rejuve Labs' },
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Kathmandu',
@@ -16,13 +17,13 @@ const personSchema = {
   },
   sameAs: [
     'https://github.com/RabinPyakurel',
-    'https://www.linkedin.com/in/rabinpyakurel',
+    'https://www.linkedin.com/in/rabin-pyakurel-a38438260/',
   ],
 };
 
 const SEO = ({ title, description, path = '/', type = 'website' }) => {
-  const pageTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} | Java Developer & Web Developer`;
-  const pageDescription = description || 'Rabin Babu Pyakurel — Java Developer & Web Developer. Portfolio showcasing projects, skills, certifications, and resume.';
+  const pageTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} | Backend Engineer (.NET) & Java Developer`;
+  const pageDescription = description || 'Rabin Babu Pyakurel — Backend Engineer at Rejuve Labs (ASP.NET Core, EF Core, PostgreSQL, Docker) and Java & Spring Boot developer. Projects, skills, certifications and resume.';
   const url = `${BASE_URL}${path}`;
 
   return (

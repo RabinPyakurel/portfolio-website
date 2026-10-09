@@ -12,7 +12,7 @@ const AboutPage = () => (
     <SEO
       title="About"
       path="/about"
-      description="Learn about Rabin Babu Pyakurel — BCA student at Kathford College, skilled in Java, Spring Boot, React, PHP, and MySQL."
+      description="Learn about Rabin Babu Pyakurel — Backend Engineer at Rejuve Labs and BCA student at Kathford College, working with ASP.NET Core, EF Core, PostgreSQL, Docker, Java and Spring Boot."
     />
 
     <div className="py-10 sm:py-16">

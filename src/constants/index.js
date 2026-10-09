@@ -9,20 +9,27 @@ import devopsCertImg from '../assets/certifications/devops-cert.jpeg';
 import { DiJavascript1 } from 'react-icons/di';
 import { FaJava, FaPhp, FaHtml5, FaCss3Alt, FaGitAlt } from 'react-icons/fa';
 import { RiReactjsLine } from 'react-icons/ri';
-import { SiMysql, SiSpringboot, SiTailwindcss, SiMongodb, SiPostman } from 'react-icons/si';
+import { SiMysql, SiSpringboot, SiTailwindcss, SiMongodb, SiPostman, SiDotnet, SiPostgresql, SiDocker, SiNginx, SiGithubactions } from 'react-icons/si';
+import { TbBrandCSharp } from 'react-icons/tb';
 
-export const HERO_CONTENT = `I am an aspiring Java developer specializing in Spring Boot and web development. My journey began with coding in C and JavaScript, leading to a solid foundation in PHP and MySQL. My core focus remains on mastering Java and building innovative web solutions.`;
+export const HERO_CONTENT = `I'm a backend engineer at Rejuve Labs, building production systems with ASP.NET Core, Entity Framework Core and PostgreSQL — from authentication and APIs to Docker deployments and CI/CD on our own servers. I also build with Java and Spring Boot.`;
 
 export const HERO_ROLES = [
-  'Java Developer',
-  'Backend Developer',
-  'Web Developer',
-  'CS Student',
+  'Backend Engineer',
+  '.NET Developer',
+  'Java & Spring Boot Developer',
+  'DevOps Enthusiast',
 ];
 
-export const ABOUT_TEXT = `I am an enthusiastic and goal-driven developer currently pursuing a BCA at Kathford International College of Engineering and Management. My technical expertise includes C, Java, JavaScript, React, PHP, and MySQL, which I have leveraged to build academic and practice projects. My primary focus is on mastering Java and Spring Boot, with aspirations to excel as a full-time Java developer. My fascination with creating intuitive and efficient web solutions drives my efforts. Outside of coding, I enjoy participating in tech competitions and exploring emerging technologies.`;
+export const ABOUT_TEXT = `I'm an Associate Backend Engineer at Rejuve Labs and a BCA student at Kathford International College of Engineering and Management (graduating 2027). At Rejuve Labs I rebuilt our platform backend on ASP.NET Core 10 and EF Core — Identity-based authentication with rotating refresh tokens, an employee attendance and HR portal, PDF certificates generated with Playwright — and run it on Docker with CI/CD on our own VPS. I also built the backend for Shreevas, an e-commerce store, including a live integration with an inventory system. Before that I interned at Dynamic Technosoft, working on an NGO/INGO management platform in ASP.NET MVC and SQL Server. Alongside .NET I build with Java and Spring Boot. My team won the Public Choice Award at CodeFest 2024.`;
 
 export const SKILLS = [
+  { name: 'C#',          icon: TbBrandCSharp,   color: 'text-purple-500' },
+  { name: 'ASP.NET Core', icon: SiDotnet,       color: 'text-violet-500' },
+  { name: 'PostgreSQL',  icon: SiPostgresql,    color: 'text-sky-500' },
+  { name: 'Docker',      icon: SiDocker,        color: 'text-blue-500' },
+  { name: 'nginx',       icon: SiNginx,         color: 'text-green-500' },
+  { name: 'GitHub Actions', icon: SiGithubactions, color: 'text-blue-400' },
   { name: 'Java',        icon: FaJava,          color: 'text-red-500' },
   { name: 'Spring Boot', icon: SiSpringboot,    color: 'text-green-600' },
   { name: 'React',       icon: RiReactjsLine,   color: 'text-cyan-500' },
@@ -39,10 +46,10 @@ export const SKILLS = [
 
 export const EDUCATION = [
   {
-    year: '2022 - Present (Expected 2026)',
+    year: '2022 - Present (Expected 2027)',
     title: 'Bachelor of Computer Application (BCA)',
     institution: 'Kathford International College of Engineering and Management',
-    description: 'Currently pursuing BCA with focus on software development, database systems, and web technologies.',
+    description: 'Pursuing BCA with a focus on software development, database systems and web technologies. Public Choice Award – CodeFest 2024 Hackathon.',
   },
   {
     year: 'Completed',
@@ -185,5 +192,5 @@ export const CERTIFICATIONS = [
 export const CONTACT = {
   address: 'Gaurighat, Kathmandu',
   phoneNo: '+977 9848754410',
-  email: 'rabinstar137@gmail.com',
+  email: 'rabinb.pyakurel@gmail.com',
 };

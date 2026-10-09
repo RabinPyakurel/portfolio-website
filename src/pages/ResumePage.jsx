@@ -7,10 +7,17 @@ import { SKILLS, EDUCATION, CONTACT } from '../constants';
 
 const EXPERIENCE = [
   {
-    period: '31st March, 2026 – 30th June, 2026',
+    period: 'August 2026 – Present',
+    role: 'Associate Backend Engineer',
+    company: 'Rejuve Labs',
+    description: 'Rebuilt the Rejuve Labs platform backend as a modular monolith on ASP.NET Core 10, EF Core and PostgreSQL — ASP.NET Identity authentication with JWT and rotating refresh cookies, Google/Facebook OAuth, role-based access and rate limiting; an employee attendance and HR portal with multi-session punch-in/out, IP and location capture, leave approvals and an audit log; and verifiable PDF certificates rendered from HTML with Playwright. Built the backend for Shreevas (e-commerce), including an inventory-system integration with background stock sync, oversell-proof sales and SSO, and a responsive WebP image pipeline. Deployed everything with Docker, nginx and GitHub Actions CI/CD on a Linux VPS.',
+    highlights: ['ASP.NET Core', 'EF Core', 'ASP.NET Identity', 'PostgreSQL', 'Docker', 'nginx', 'GitHub Actions', 'Playwright'],
+  },
+  {
+    period: 'March 2026 – June 2026',
     role: '.NET Intern',
     company: 'Dynamic Technosoft Pvt. Ltd.',
-    description: 'Contributed to the development of a centralized NGO/INGO registration and project tracking platform using ASP.NET MVC, AngularJS, Bootstrap 4, and Microsoft SQL Server. Developed full-stack features including CRUD operations, business logic, form validations, database integrations, and responsive user interfaces. Collaborated in an Agile development environment using Git, participating in feature development, testing, debugging, and application maintenance.',
+    description: 'Contributed to a centralized NGO/INGO registration and project tracking platform used by 50+ organizations, built with ASP.NET MVC, AngularJS, Bootstrap 4 and Microsoft SQL Server. Developed CRUD workflows, business logic and server-side validation across 10+ modules, wrote SQL queries and stored procedures for reporting, and worked in an Agile team with Git and code reviews.',
     highlights: ['ASP.NET MVC', 'AngularJS', 'Bootstrap 4', 'Microsoft SQL Server', 'Git', 'Agile'],
   },
   {
@@ -41,7 +48,7 @@ const ResumePage = () => (
     <SEO
       title="Resume"
       path="/resume"
-      description="Resume of Rabin Babu Pyakurel — Java & Spring Boot Developer with experience in full-stack web development, RESTful APIs, React, PHP, and MySQL."
+      description="Resume of Rabin Babu Pyakurel — Associate Backend Engineer at Rejuve Labs working with ASP.NET Core, EF Core, PostgreSQL, Docker and CI/CD; also Java and Spring Boot."
     />
 
     <div className="py-10 sm:py-16 max-w-4xl mx-auto">
@@ -65,15 +72,14 @@ const ResumePage = () => (
       <ScrollReveal>
         <div className="bg-[#161b22] border border-gray-800 rounded-xl p-4 sm:p-6 mb-8 sm:mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-100">Rabin Babu Pyakurel</h2>
-          <p className="text-primary-400 font-medium mt-1 text-sm sm:text-base">Java & Spring Boot Developer | Web Developer</p>
+          <p className="text-primary-400 font-medium mt-1 text-sm sm:text-base">Associate Backend Engineer @ Rejuve Labs | ASP.NET Core · Java & Spring Boot</p>
           <p className="text-xs sm:text-sm text-gray-400 mt-2 break-words">
             {CONTACT.address} &middot; {CONTACT.phoneNo} &middot; {CONTACT.email}
           </p>
           <p className="text-sm sm:text-base text-gray-400 mt-3 leading-relaxed">
-            Aspiring Java & Spring Boot developer focused on building scalable backend systems and full-stack web applications.
-            Currently pursuing BCA, with hands-on experience in RESTful APIs, React, PHP, and MySQL.
-            Also gained industry exposure through a .NET internship at Dynamic Technosoft Pvt. Ltd.
-            Passionate about clean code, efficient backend architecture, and intuitive user interfaces.
+            Backend engineer building production systems with ASP.NET Core, EF Core and PostgreSQL — APIs, authentication,
+            databases, and the Docker and CI/CD setup they run on. Previously a .NET intern at Dynamic Technosoft Pvt. Ltd.
+            Also builds with Java and Spring Boot. BCA student at Kathford (graduating 2027).
           </p>
         </div>
       </ScrollReveal>
